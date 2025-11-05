@@ -1,0 +1,7 @@
+Prompt 1: Create a simple static website repo for GitHub Pages that demonstrates a deliberately ugly UI. Include index.html, styles.css, script.js, and an inline SVG image file as a "screenshot" of the ugly UI. The site should have an explanation listing what is wrong with the UI and specific improvement steps. Return full file contents for each file.
+
+Prompt 2: Add an ESLint configuration that enforces semicolons (semi: ["error","always"]) and quotes single. Add package.json with eslint in devDependencies and a "lint" script that runs eslint on .js files. Add a small script.js that intentionally omits a semicolon to break the lint rule.
+
+Prompt 3: Write a GitHub Actions workflow YAML that runs on push to main. The workflow should have two jobs: lint (runs npm ci and npm run lint) and deploy (depends on lint). The deploy job should use peaceiris/actions-gh-pages@v3 to publish the repository root to the gh-pages branch using the built-in GITHUB_TOKEN.
+
+Prompt 4: Create a README that documents repository structure, how to create the GitHub repo, how to push, and how to enable GitHub Pages. Include commands to create the repo with the gh CLI as an example and manual steps.

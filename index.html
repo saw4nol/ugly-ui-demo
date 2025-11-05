@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Ugly UI — Static Demo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>The Ugliest UI I Could Design</h1>
+    <p class="byline">A deliberately bad UI and notes on how to improve it.</p>
+  </header>
+
+  <main>
+    <section class="screenshot">
+      <h2>Screenshot of the "ugly" UI</h2>
+      <img src="images/ugly-screenshot.svg" alt="Ugly UI screenshot" />
+    </section>
+
+    <section class="analysis">
+      <h2>What’s wrong with this UI?</h2>
+      <ul>
+        <li>Horrible color contrast and clashing hues.</li>
+        <li>Poor layout with misaligned elements and no spacing system.</li>
+        <li>Unreadable fonts (too many font sizes and styles used randomly).</li>
+        <li>Non-semantic HTML — accessibility ignored (no ARIA, no landmarks).</li>
+        <li>Confusing interaction patterns and unclear affordances.</li>
+      </ul>
+
+      <h2>What I would do to improve it</h2>
+      <ol>
+        <li>Apply a consistent design system: typography scale, spacing, color palette, and elevation rules.</li>
+        <li>Fix color contrast to meet WCAG AA at minimum — test with color-contrast tools.</li>
+        <li>Use semantic HTML and ARIA attributes; ensure tab order and keyboard navigation work.
+        </li>
+        <li>Simplify the layout using a responsive grid or flexbox — mobile-first approach.</li>
+        <li>Introduce consistent affordances and clear call-to-action buttons with clear language.</li>
+        <li>Add unit / visual regression tests and user testing to validate improvements.</li>
+      </ol>
+
+      <p class="note">This page intentionally includes an obvious JavaScript lint error (missing semicolon) so the CI linter will fail — change <code>script.js</code> to fix it and see the action succeed.</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
